@@ -10,6 +10,7 @@
 </template>
 
 <script setup lang="ts">
+import useSWRV from "swrv";
 import type { User } from "~/types/api/users";
-const { data: users } = await useFetch<User[]>("/api/users");
+const { data: users } = useSWRV<User[]>("/api/users");
 </script>
