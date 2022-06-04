@@ -4,9 +4,11 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "json-server": "json-server --watch ./mock/db.json --port 5000"
   },
   "devDependencies": {
+    "json-server": "^0.17.0",
     "nuxt": "3.0.0-rc.3"
   }
 }
