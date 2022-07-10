@@ -9,7 +9,5 @@ export default defineEventHandler(async () => {
     orderBy: "startTime",
   });
 
-  return {
-    res,
-  };
+  return res.data.items;
 });
