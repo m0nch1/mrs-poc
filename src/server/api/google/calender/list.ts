@@ -9,8 +9,6 @@ export default defineEventHandler(async () => {
     orderBy: "startTime",
   });
 
-  console.log(res);
-
   return {
     res,
   };
