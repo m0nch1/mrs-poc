@@ -15,7 +15,7 @@
 import useSWRV from "swrv";
 import type { Schema$Events } from "googleapi";
 const { data: events } = await useSWRV<Schema$Events[]>(
-  "/api/google/calender/list",
+  "/api/google/calendar/list",
   undefined,
   { refreshInterval: 10000 }
 );

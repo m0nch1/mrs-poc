@@ -1,5 +1,5 @@
 ## what is this?
-poc repository to get and display google calender api with swr（swrv）
+poc repository to get and display google calendar api with swr（swrv）
 
 ## Setup
 
@@ -50,7 +50,7 @@ calendar_id= //calendar_id from the Calendar Settings < Integrate calendar
 project_number= //project_number  from the Project Settings (See Google Cloud Console).
 ```
 
-## setup calender account
+## setup calendar account
 create a dummy calendar that we can use to follow along with this guide. Once you create a new calendar, go to calendar settings and add the service account email in the “Share with specific people” option (set permissions to "Make changes to events"). 
 
 ## Development Server
