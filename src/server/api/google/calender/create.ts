@@ -1,4 +1,3 @@
-import type { IncomingMessage, ServerResponse } from "http";
 import {
   googleAuth,
   calendarClient,
@@ -15,11 +14,11 @@ export default defineEventHandler(async () => {
       summary: "Test Event added by Node.js",
       description: "This event was created by Node.js",
       start: {
-        dateTime: "2022-07-12T09:00:00-02:00",
+        dateTime: "2022-07-13T03:00:00-02:00",
         timeZone: "Asia/Tokyo",
       },
       end: {
-        dateTime: "2022-07-12T17:00:00-02:00",
+        dateTime: "2022-07-13T08:00:00-02:00",
         timeZone: "Asia/Tokyo",
       },
       attendees: [],
