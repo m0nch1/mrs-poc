@@ -13,8 +13,9 @@
 
 <script setup lang="ts">
 import useSWRV from "swrv";
-import type { Schema$Events } from "googleapi";
-const { data: events } = await useSWRV<Schema$Events[]>(
+import { calendar_v3 } from "googleapis";
+
+const { data: events } = await useSWRV<calendar_v3.Schema$Event[]>(
   "/api/google/calendar/list",
   undefined,
   { refreshInterval: 10000 }
