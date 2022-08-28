@@ -1,4 +1,5 @@
 node_modules
 .nuxt
 .env
+.env_old
 credentials
