@@ -48,10 +48,18 @@ auth_provider_x509_cert_url= //Retrieved from keys.json
 client_x509_cert_url= //Retrieved from keys.json
 calendar_id= //calendar_id from the Calendar Settings < Integrate calendar
 project_number= //project_number  from the Project Settings (See Google Cloud Console).
+admin_email= // The email address of the administrator, which is needed to delegate privileges when calling the admin SDK api via the service account.
 ```
 
 ## setup calendar account
 create a dummy calendar that we can use to follow along with this guide. Once you create a new calendar, go to calendar settings and add the service account email in the “Share with specific people” option (set permissions to "Make changes to events"). 
+
+## setup Admin SDK api
+Google Workspace, an admin account, and building and resource settings are required.
+
+Enable the Admin SDK API with GCP's API credentials and allow the necessary scope.
+
+In Google Admin, go to Security > Access and Data Management > API Control and enter the id and scope of the service account you created under "Domain-wide Delegation".
 
 ## Development Server
 
