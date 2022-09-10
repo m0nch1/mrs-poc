@@ -2,7 +2,7 @@
   <div>
     <h1>イベントー覧</h1>
     <ul>
-      <li v-for="event in events" :key="event.id">
+      <li v-for="(event, index) in events" :key="event.id || index">
         <div>イベント名：{{ event.summary }}</div>
         <div>イベント開始日時：{{ event.start }}</div>
         <hr />
