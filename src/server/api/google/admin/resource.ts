@@ -6,5 +6,5 @@ export default defineEventHandler(async () => {
     maxResults: 10,
   });
 
-  return res.data;
+  return res.data.items;
 });
